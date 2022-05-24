@@ -6,17 +6,17 @@
 
 - **FFmpeg** - утилита для обработки видеофайлов. С помощью данной утилиты видеофайл разделялся на фреймы. Использование:
 	
-	<<'ffmpeg -i /path/to/video.avi %04d.png<<'
+	`ffmpeg -i /path/to/video.avi %04d.png<<`
 
 - **VVG Image Annotator** - программа для разметки полученных изображений. Ссылка на сайт: https://www.robots.ox.ac.uk/~vgg/software/via/ . Для разметки дафний использовались эллипсы. 
 
 - **markup.py** - данная программа приводит выходной json из разметчика к форме для использования в framework. Использование:
 	
-	<<'python3 markup.py /path/to/orig/json path/to/mod/json<<'
+	`python3 markup.py /path/to/orig/json path/to/mod/json<<`
  
  Пример получаемого json-файла:
 
-'''json
+```json
 {
     "_via_attributes": {
         "region": {}, 
